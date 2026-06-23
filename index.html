@@ -20,7 +20,7 @@ img{display:block;width:100%;object-fit:cover;}
 .cover-detail .label{font-family:'Cormorant Garamond',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:4px;}
 .cover-detail .value{font-size:14px;color:var(--cream);opacity:.9;}
 .cover-rule{width:80px;height:1px;background:var(--gold);margin:30px auto;opacity:.5;}
-section{padding:80px 0;border-bottom:1px solid rgba(200,134,26,.12);}div[style*="line-height:0"]{border:none;}
+section{padding:80px 0;border-bottom:1px solid rgba(200,134,26,.12);position:relative;z-index:2;background:var(--ink);}div[style*="line-height:0"]{border:none;}
 .container{max-width:920px;margin:0 auto;padding:0 48px;}
 .section-label{font-family:'Cormorant Garamond',serif;font-size:9.5px;letter-spacing:4px;text-transform:uppercase;color:var(--amber);margin-bottom:20px;display:flex;align-items:center;gap:16px;}
 .section-label::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--amber),transparent);opacity:.4;}
@@ -162,7 +162,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- DIRECTOR'S STATEMENT -->
-<section style="padding:64px 0;">
+<section style="padding:64px 0;position:relative;z-index:2;background:var(--ink);">
   <div class="container">
     <div class="section-label">Director&rsquo;s Statement</div>
     <div class="statement-block">
@@ -177,7 +177,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- CHARACTER ROW -->
-<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;"><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3px;height:600px;">
+<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;position:relative;z-index:1;"><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3px;height:600px;">
   <img src="images/juk-still-skip-stairs.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
   <img src="images/juk-still-elsie.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
   <img src="images/juk-bts-elsie-stairs.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
@@ -230,7 +230,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- PRODUCER'S STATEMENT -->
-<section style="padding:64px 0;">
+<section style="padding:64px 0;position:relative;z-index:2;background:var(--ink);">
   <div class="container">
     <div class="section-label">Producer&rsquo;s Statement</div>
     <div class="statement-block">
@@ -244,8 +244,8 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- DANCE FLOOR SPLIT -->
-<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;"><div style="display:flex;flex-direction:column;gap:3px;">
-  <img src="images/juk-still-skip-crowd.jpg" style="width:100%;height:70vh;object-fit:cover;object-position:center 30%;display:block;" alt="">
+<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;position:relative;z-index:1;"><div style="display:flex;flex-direction:column;gap:3px;">
+  <img src="images/juk-still-skip-crowd.jpg" style="width:100%;height:70vh;object-fit:cover;object-position:center 30%;display:block;position:relative;z-index:1;" alt="">
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;height:500px;">
     <img src="images/juk-still-ms-darling-portrait1.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
     <img src="images/juk-still-wooty-elsie-close.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;" alt="">
@@ -299,7 +299,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- FULL CAST -->
-<section id="fullcast" style="background:rgba(200,134,26,0.04);border-top:1px solid rgba(200,134,26,.15);border-bottom:1px solid rgba(200,134,26,.15);">
+<section id="fullcast" style="position:relative;z-index:2;background:#111;border-top:1px solid rgba(200,134,26,.15);border-bottom:1px solid rgba(200,134,26,.15);">
   <div class="container">
     <div class="section-label">Full Cast</div>
     <h2>Complete Cast List</h2>
@@ -361,7 +361,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- DANCE FLOOR SPREAD -->
-<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;height:580px;">
+<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;position:relative;z-index:1;"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;height:580px;">
   <img src="images/juk-still-roz-singing.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
   <img src="images/juk-still-vintage-car-night.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" alt="">
   <img src="images/juk-still-elsie-wooty-portrait.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" alt="">
@@ -622,7 +622,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- AWARDS & RECOGNITION -->
-<section id="awards">
+<section id="awards" style="position:relative;z-index:2;background:var(--ink);">
   <div class="container">
     <div class="section-label">Awards &amp; Recognition</div>
     <h2>Recognition</h2>
@@ -652,7 +652,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- TRAILER & LINKS -->
-<section id="trailer" style="background:rgba(10,10,10,0.6);">
+<section id="trailer" style="position:relative;z-index:2;background:#0a0a0a;">
   <div class="container" style="text-align:center;">
     <div class="section-label">Watch</div>
     <h2>Trailer &amp; Links</h2>
@@ -691,7 +691,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 </section>
 
 <!-- FINAL SPREAD -->
-<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;">
+<div style="display:block;line-height:0;font-size:0;margin:0;padding:0;position:relative;z-index:1;background:#000;">
   <img src="images/juk-still-car-kiss.jpg" style="width:100%;height:auto;display:block;" alt="">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:3px;">
     <img src="images/juk-still-ms-darling-car.jpg" style="width:100%;height:400px;object-fit:cover;object-position:center top;display:block;" alt="">
@@ -744,7 +744,7 @@ footer{background:var(--deep);text-align:center;padding:48px;border-top:1px soli
 
 
 <!-- PHOTO GALLERY -->
-<section id="photos" style="background:#0a0a0a;padding:80px 0;">
+<section id="photos" style="position:relative;z-index:2;background:#0a0a0a;padding:80px 0;">
   <div class="container">
     <div class="section-label">Press Assets</div>
     <h2>Photo Gallery</h2>
